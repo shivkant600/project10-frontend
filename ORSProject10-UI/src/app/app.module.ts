@@ -57,6 +57,23 @@ import { CustomerComponent } from './customer/customer.component';
 import { CustomerlistComponent } from './customer/customer-list.component';
 import { AlertComponent } from './alert/alert.component';
 import { AlertlistComponent } from './alert/alertlist.component';
+import { OrderComponent } from './order/order.component';
+import { OrderlistComponent } from './order/orderlist.component';
+import { PolicyComponent } from './policy/policy.component';
+import { PolicylistComponent } from './policy/policylist.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
+import { SponsorlistComponent } from './sponsor/sponsorlist.component';
+import { ParkingComponent } from './parking/parking.component';
+import { ParkinglistComponent } from './parking/parkinglist.component';
+import { PlanComponent } from './plan/plan.component';
+import { PlanlistComponent } from './plan/planlist.component';
+import { StateComponent } from './state/state.component';
+import { StatelistComponent } from './state/statelist.component';
+import { HealthComponent } from './health/health.component';
+import { HeathlistComponent } from './health/heathlist.component';
+import { LocationComponent } from './location/location.component';
+import { LocationlistComponent } from './location/locationlist.component';
+
 
 
 
@@ -114,7 +131,24 @@ export function myHttpLoader(http: HttpClient) {
     CustomerComponent,
     CustomerlistComponent,
     AlertComponent,
-    AlertlistComponent
+    AlertlistComponent,
+    OrderComponent,
+    OrderlistComponent,
+    PolicyComponent,
+    PolicylistComponent,
+    SponsorComponent,
+    SponsorlistComponent,
+    ParkingComponent,
+    ParkinglistComponent,
+    PlanComponent,
+    PlanlistComponent,
+    StateComponent,
+    StatelistComponent,
+    HealthComponent,
+    HeathlistComponent,
+    LocationComponent,
+    LocationlistComponent,
+  
  
 
     

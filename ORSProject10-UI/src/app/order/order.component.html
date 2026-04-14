@@ -21,8 +21,8 @@ background-size: cover;width:auto;
       <div class="card-body shadow-lg grad">
         <form>
           <h2 *ngIf="!form.data.id>0" class="text-primary font-weight-bold" style="text-align: center;">{{'Add
-            Alert' | translate}}</h2>
-          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold">{{'Update Alert' | translate}}</h2>
+            Order' | translate}}</h2>
+          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold">{{'Update Order' | translate}}</h2>
           <div *ngIf="form.error && form.message != null" class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             {{form.message}}
@@ -34,18 +34,18 @@ background-size: cover;width:auto;
 
 
           <div style="padding-top:3%">
-            <span class="pt-2"><b>{{' alertCode' | translate}}</b>
+            <span class="pt-2"><b>{{' orderCode' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
                 </div>
-                <input type="text" name="alertCode" [(ngModel)]="form.data.alertCode" class="form-control"
-                  placeholder="{{'Enter  alertCode' | translate}}">
+                <input type="text" name="orderCode" [(ngModel)]="form.data.orderCode" class="form-control"
+                  placeholder="{{'Enter  orderCode' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertCode}} </span>
+            <span class="alertRedColor"> {{form.inputerror.orderCode}} </span>
           </div>
 
 
@@ -53,18 +53,39 @@ background-size: cover;width:auto;
 
 
            <div style="padding-top:3%">
-            <span class="pt-2"><b>{{' alertType' | translate}}</b>
+            <span class="pt-2"><b>{{' customerName' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
                 </div>
-                <input type="text" name="alertType" [(ngModel)]="form.data.alertType" class="form-control"
-                  placeholder="{{'Enter  alertType' | translate}}">
+                <input type="text" name="customerName" [(ngModel)]="form.data.customerName" class="form-control"
+                  placeholder="{{'Enter  customerName' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertType}} </span>
+            <span class="alertRedColor"> {{form.inputerror.customerName}} </span>
+          </div>
+
+
+
+
+
+
+
+            <div style="padding-top:3%">
+            <span class="pt-2"><b>{{' totalAmount' | translate}}</b>
+              <span class="required-field"></span></span>
+            <div class="col-sm-12">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
+                </div>
+                <input type="text" name="totalAmount" [(ngModel)]="form.data.totalAmount" class="form-control"
+                  placeholder="{{'Enter  totalAmount' | translate}}">
+              </div>
+            </div>
+            <span class="alertRedColor"> {{form.inputerror.totalAmount}} </span>
           </div>
 
 
@@ -74,11 +95,7 @@ background-size: cover;width:auto;
 
 
 
-
-
-
-
-          <div style="padding-top:3%">
+          <!-- <div style="padding-top:3%">
             <span class="pt-2"><b>{{'alertTime' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
@@ -92,7 +109,9 @@ background-size: cover;width:auto;
               </div>
             </div>
             <span class="alertRedColor"> {{form.inputerror.alertTime}} </span>
-          </div>
+          </div> -->
+
+
 
 
 
@@ -107,7 +126,7 @@ background-size: cover;width:auto;
 
 
           <div style="padding-top:3%">
-            <span class="pt-2"><b>{{'alertStatus' | translate}}</b>
+            <span class="pt-2"><b>{{'status' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
@@ -117,15 +136,15 @@ background-size: cover;width:auto;
                 <!-- <input type="text" name="attendanceStatus" [(ngModel)]="form.data.attendanceStatus" class="form-control"
                   placeholder="{{'Enter attendanceStatus' | translate}}">  -->
 
-                <select class="form-control" name="alertStatus" [(ngModel)]="form.data.alertStatus"
+                <select class="form-control" name="status" [(ngModel)]="form.data.status"
                   style="cursor: pointer;">
-                  <option [ngValue]="" value="undefined">{{'select alertStatus ' | translate }}</option>
+                  <option [ngValue]="" value="undefined">{{'select status ' | translate }}</option>
                   <option value="active">{{'active' | translate }} </option>
-                  <option value="inactive">{{'inactive' | translate }} </option>
+                  <option value="incative">{{'inactive' | translate }} </option>
                 </select>
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertStatus}} </span>
+            <span class="alertRedColor"> {{form.inputerror.status}} </span>
           </div>
 
 
@@ -146,7 +165,7 @@ background-size: cover;width:auto;
                 {{'Update' | translate}}</button>
             </div>
             <div class="pt-2">
-              <button (click)="forward('/alertlist')" type="button" class="btn btn-warning mr-1">{{'List' |
+              <button (click)="forward('/orderlist')" type="button" class="btn btn-warning mr-1">{{'List' |
                 translate}}
               </button>
             </div>

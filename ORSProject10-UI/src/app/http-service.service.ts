@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router'
 
 
@@ -8,7 +7,7 @@ import { Router } from '@angular/router'
 
 export class HttpServiceService {
 
-
+  msg = '';
   token = '';
   form = {
     message: '',
@@ -50,7 +49,7 @@ export class HttpServiceService {
       this.form.error = true;
       this.userparams.url = this.router.url;// to navigate the URI request.
       this.router.navigateByUrl("/login");
-      console.log("Amit Bansal");
+      console.log("Sushobhit pandey");
 
       return true;
     } else {
@@ -60,33 +59,73 @@ export class HttpServiceService {
 
 
   get(endpoint, callback) {
-    if (this.isLogout()) {
-      console.log('inside isLogout() return true');
-      return true;
-    }
-    return this.httpClient.get(endpoint).subscribe((data) => {
-      console.log('Data :: ' + data);
-      callback(data);
-
-    });
+  if (this.isLogout()) {
+    console.log('inside isLogout() return true');
+    return true;
   }
 
-  post(endpoint, bean, callback) {
-    if (this.isLogout()) {
-      console.log('inside isLogout return true')
-      return true;
+  return this.httpClient.get(endpoint).subscribe(function (data) {
+    console.log('Data :: ' + data);
+    callback(data);
+
+  }, error => {
+    console.log('ORS Error--', error);
+
+    
+
+    if (error && error.error && error.error.message && error.error.message.length > 0) {
+        this.msg = error.error.message[0];
     }
-    return this.httpClient.post(endpoint, bean).subscribe((data) => {
-      console.log(data);
-      callback(data);
 
-    }, error => {
+    const customError = {
+      status: error.status,
+      message: this.msg
+    };
 
-      console.log('ORS Error--', error);
-    }); ``
-  }
-
-
+    callback(null, customError);
+  });
 }
 
 
+  post(endpoint, bean, callback, errorCallback?) {
+
+  if (this.isLogout()) {
+    console.log('inside isLogout return true');
+    return;
+  }
+
+  return this.httpClient.post(endpoint, bean).subscribe(
+
+    (data) => {
+      console.log(data);
+      callback(data);
+    },
+
+    (error) => {
+      console.log('ORS Error--', error);
+
+      
+
+      if (error && error.error && error.error.result && error.error.result.message) {
+       this. msg = error.error.result.message;
+      }
+
+      const errorRes = {
+        success: false,
+        result: {
+          message: this. msg
+        }
+      };
+
+      callback(errorRes);
+
+      if (errorCallback) {
+        errorCallback(error);
+      }
+    }
+
+  );
+}
+
+
+}

@@ -21,8 +21,8 @@ background-size: cover;width:auto;
       <div class="card-body shadow-lg grad">
         <form>
           <h2 *ngIf="!form.data.id>0" class="text-primary font-weight-bold" style="text-align: center;">{{'Add
-            Alert' | translate}}</h2>
-          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold">{{'Update Alert' | translate}}</h2>
+            Parking' | translate}}</h2>
+          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold">{{'Update Parking' | translate}}</h2>
           <div *ngIf="form.error && form.message != null" class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             {{form.message}}
@@ -34,18 +34,18 @@ background-size: cover;width:auto;
 
 
           <div style="padding-top:3%">
-            <span class="pt-2"><b>{{' alertCode' | translate}}</b>
+            <span class="pt-2"><b>{{' location' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
                 </div>
-                <input type="text" name="alertCode" [(ngModel)]="form.data.alertCode" class="form-control"
-                  placeholder="{{'Enter  alertCode' | translate}}">
+                <input type="text" name="location" [(ngModel)]="form.data.location" class="form-control"
+                  placeholder="{{'Enter  location' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertCode}} </span>
+            <span class="alertRedColor"> {{form.inputerror.location}} </span>
           </div>
 
 
@@ -53,45 +53,36 @@ background-size: cover;width:auto;
 
 
            <div style="padding-top:3%">
-            <span class="pt-2"><b>{{' alertType' | translate}}</b>
+            <span class="pt-2"><b>{{' capacity' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
                 </div>
-                <input type="text" name="alertType" [(ngModel)]="form.data.alertType" class="form-control"
-                  placeholder="{{'Enter  alertType' | translate}}">
+                <input type="text" name="capacity" [(ngModel)]="form.data.capacity" class="form-control"
+                  placeholder="{{'Enter  capacity' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertType}} </span>
+            <span class="alertRedColor"> {{form.inputerror.capacity}} </span>
           </div>
 
 
 
 
-
-
-
-
-
-
-
-
-          <div style="padding-top:3%">
-            <span class="pt-2"><b>{{'alertTime' | translate}}</b>
+           <div style="padding-top:3%">
+            <span class="pt-2"><b>{{' fee' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-bars grey-text"></i> </div>
+                  <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
                 </div>
-                <input type="date" name="alertTime" [value]="form.data.alertTime | date:'yyyy-MM-dd'"
-                  (input)="form.data.alertTime=parseDate($event.target.value)" class="form-control"
-                  placeholder="{{'Enter Total alertTime' | translate}}">
+                <input type="text" name="fee" [(ngModel)]="form.data.fee" class="form-control"
+                  placeholder="{{'Enter  fee' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertTime}} </span>
+            <span class="alertRedColor"> {{form.inputerror.fee}} </span>
           </div>
 
 
@@ -101,32 +92,18 @@ background-size: cover;width:auto;
 
 
 
+         
 
 
 
 
 
-          <div style="padding-top:3%">
-            <span class="pt-2"><b>{{'alertStatus' | translate}}</b>
-              <span class="required-field"></span></span>
-            <div class="col-sm-12">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-bars grey-text"></i> </div>
-                </div>
-                <!-- <input type="text" name="attendanceStatus" [(ngModel)]="form.data.attendanceStatus" class="form-control"
-                  placeholder="{{'Enter attendanceStatus' | translate}}">  -->
 
-                <select class="form-control" name="alertStatus" [(ngModel)]="form.data.alertStatus"
-                  style="cursor: pointer;">
-                  <option [ngValue]="" value="undefined">{{'select alertStatus ' | translate }}</option>
-                  <option value="active">{{'active' | translate }} </option>
-                  <option value="inactive">{{'inactive' | translate }} </option>
-                </select>
-              </div>
-            </div>
-            <span class="alertRedColor"> {{form.inputerror.alertStatus}} </span>
-          </div>
+
+
+
+
+
 
 
 

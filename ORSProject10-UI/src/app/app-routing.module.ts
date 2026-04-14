@@ -39,6 +39,22 @@ import { CustomerComponent } from './customer/customer.component';
 import { CustomerlistComponent } from './customer/customer-list.component';
 import { AlertComponent } from './alert/alert.component';
 import { AlertlistComponent } from './alert/alertlist.component';
+import { OrderComponent } from './order/order.component';
+import { OrderlistComponent } from './order/orderlist.component';
+import { PolicyComponent } from './policy/policy.component';
+import { PolicylistComponent } from './policy/policylist.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
+import { SponsorlistComponent } from './sponsor/sponsorlist.component';
+import { ParkingComponent } from './parking/parking.component';
+import { ParkinglistComponent } from './parking/parkinglist.component';
+import { PlanComponent } from './plan/plan.component';
+import { PlanlistComponent } from './plan/planlist.component';
+import { StateComponent } from './state/state.component';
+import { StatelistComponent } from './state/statelist.component';
+import { HealthComponent } from './health/health.component';
+import { HeathlistComponent } from './health/heathlist.component';
+import { LocationComponent } from './location/location.component';
+import { LocationlistComponent } from './location/locationlist.component';
 
 
 const routes: Routes = [
@@ -251,6 +267,129 @@ const routes: Routes = [
  {
         path: 'alert/:id',
         component: AlertComponent
+    },
+
+
+
+
+    {
+        path: 'order',
+        component: OrderComponent
+    },
+ {
+        path: 'orderlist',
+        component: OrderlistComponent
+    },
+ {
+        path: 'order/:id',
+        component: OrderComponent
+    },
+
+
+
+     {
+        path: 'policy',
+        component: PolicyComponent
+    },
+ {
+        path: 'policylist',
+        component: PolicylistComponent
+    },
+ {
+        path: 'policy/:id',
+        component: PolicyComponent
+    },
+
+
+      {
+        path: 'sponsor',
+        component: SponsorComponent
+    },
+ {
+        path: 'sponsorlist',
+        component: SponsorlistComponent
+    },
+ {
+        path: 'sponsor/:id',
+        component: SponsorComponent
+    },
+
+
+
+
+    
+      {
+        path: 'parking',
+        component: ParkingComponent
+    },
+ {
+        path: 'parkinglist',
+        component: ParkinglistComponent
+    },
+ {
+        path: 'parking/:id',
+        component: ParkingComponent
+    },
+
+
+
+      {
+        path: 'plan',
+        component: PlanComponent
+    },
+ {
+        path: 'planlist',
+        component: PlanlistComponent
+    },
+ {
+        path: 'plan/:id',
+        component: PlanComponent
+    },
+
+
+
+
+      {
+        path: 'state',
+        component: StateComponent
+    },
+ {
+        path: 'statelist',
+        component: StatelistComponent
+    },
+ {
+        path: 'state/:id',
+        component: StateComponent
+    },
+
+
+
+
+      {
+        path: 'health',
+        component: HealthComponent
+    },
+ {
+        path: 'healthlist',
+        component: HeathlistComponent
+    },
+ {
+        path: 'health/:id',
+        component: HealthComponent
+    },
+
+
+       {
+        path: 'location',
+        component: LocationComponent
+    },
+ {
+        path: 'locationlist',
+        component: LocationlistComponent
+    },
+ {
+        path: 'location/:id',
+        component: LocationComponent
     },
 
 
