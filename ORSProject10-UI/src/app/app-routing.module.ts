@@ -55,6 +55,8 @@ import { HealthComponent } from './health/health.component';
 import { HeathlistComponent } from './health/heathlist.component';
 import { LocationComponent } from './location/location.component';
 import { LocationlistComponent } from './location/locationlist.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentlistComponent } from './payment/paymentlist.component';
 
 
 const routes: Routes = [
@@ -391,6 +393,22 @@ const routes: Routes = [
         path: 'location/:id',
         component: LocationComponent
     },
+
+
+
+      {
+        path: 'payment',
+        component: PaymentComponent
+    },
+ {
+        path: 'paymentlist',
+        component: PaymentlistComponent
+    },
+ {
+        path: 'payment/:id',
+        component: PaymentComponent
+    },
+
 
 
 

@@ -73,6 +73,8 @@ import { HealthComponent } from './health/health.component';
 import { HeathlistComponent } from './health/heathlist.component';
 import { LocationComponent } from './location/location.component';
 import { LocationlistComponent } from './location/locationlist.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentlistComponent } from './payment/paymentlist.component';
 
 
 
@@ -148,6 +150,8 @@ export function myHttpLoader(http: HttpClient) {
     HeathlistComponent,
     LocationComponent,
     LocationlistComponent,
+    PaymentComponent,
+    PaymentlistComponent,
   
  
 

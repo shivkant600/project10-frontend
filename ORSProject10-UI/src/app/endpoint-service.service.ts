@@ -26,8 +26,8 @@ export class EndpointServiceService {
   public PLAN = this.SERVER_URL + "/Plan";
   public STATE = this.SERVER_URL + "/State";
   public HEALTH = this.SERVER_URL + "/Health";
-  public LOCATION = this.SERVER_URL + "/Location"
-
+  public LOCATION = this.SERVER_URL + "/Location";
+ public PAYMENT = this.SERVER_URL + "/Payment";
   
   
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
