@@ -57,6 +57,8 @@ import { LocationComponent } from './location/location.component';
 import { LocationlistComponent } from './location/locationlist.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentlistComponent } from './payment/paymentlist.component';
+import { CredentialComponent } from './credential/credential.component';
+import { CredentiallistComponent } from './credential/credentiallist.component';
 
 
 const routes: Routes = [
@@ -407,6 +409,22 @@ const routes: Routes = [
  {
         path: 'payment/:id',
         component: PaymentComponent
+    },
+
+
+
+
+     {
+        path: 'credential',
+        component: CredentialComponent
+    },
+ {
+        path: 'credentiallist',
+        component: CredentiallistComponent
+    },
+ {
+        path: 'credential/:id',
+        component: CredentialComponent
     },
 
 

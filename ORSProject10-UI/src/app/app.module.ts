@@ -75,6 +75,8 @@ import { LocationComponent } from './location/location.component';
 import { LocationlistComponent } from './location/locationlist.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentlistComponent } from './payment/paymentlist.component';
+import { CredentialComponent } from './credential/credential.component';
+import { CredentiallistComponent } from './credential/credentiallist.component';
 
 
 
@@ -152,6 +154,8 @@ export function myHttpLoader(http: HttpClient) {
     LocationlistComponent,
     PaymentComponent,
     PaymentlistComponent,
+    CredentialComponent,
+    CredentiallistComponent,
   
  
 
