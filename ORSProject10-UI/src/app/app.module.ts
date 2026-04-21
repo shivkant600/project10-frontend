@@ -156,6 +156,7 @@ export function myHttpLoader(http: HttpClient) {
     PaymentlistComponent,
     CredentialComponent,
     CredentiallistComponent,
+    PageNotFoundComponent,
   
  
 
