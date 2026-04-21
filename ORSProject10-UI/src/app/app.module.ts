@@ -164,10 +164,10 @@ export function myHttpLoader(http: HttpClient) {
     MaskingComponent,
     MaskinglistComponent,
     DataComponent,
-    DatalistComponent,
+    DatalistComponent
 =======
-    PageNotFoundComponent,
->>>>>>> c7b7e8ad1a09279b6180d5b4b63480a9e3b766fb
+   // PageNotFoundComponent,
+//>>>>>>> c7b7e8ad1a09279b6180d5b4b63480a9e3b766fb
   
  
 
