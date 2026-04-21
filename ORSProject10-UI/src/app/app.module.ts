@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { PageNotFoundComponent } from './page-not-found.component';
+
 import { AppComponent } from './app.component';
 import { MarksheetComponent } from './marksheet/marksheet.component';
 import { StudentComponent } from './student/student.component';
@@ -160,14 +160,10 @@ export function myHttpLoader(http: HttpClient) {
     PaymentlistComponent,
     CredentialComponent,
     CredentiallistComponent,
-<<<<<<< HEAD
     MaskingComponent,
     MaskinglistComponent,
     DataComponent,
     DatalistComponent,
-=======
-    PageNotFoundComponent,
->>>>>>> c7b7e8ad1a09279b6180d5b4b63480a9e3b766fb
   
  
 
