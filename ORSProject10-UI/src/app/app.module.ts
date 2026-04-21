@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
+import { PageNotFoundComponent } from './page-not-found.component';
 import { AppComponent } from './app.component';
 import { MarksheetComponent } from './marksheet/marksheet.component';
 import { StudentComponent } from './student/student.component';
