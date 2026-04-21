@@ -160,10 +160,21 @@ export function myHttpLoader(http: HttpClient) {
     PaymentlistComponent,
     CredentialComponent,
     CredentiallistComponent,
+<<<<<<< HEAD
     MaskingComponent,
     MaskinglistComponent,
     DataComponent,
     DatalistComponent,
+=======
+
+    MaskingComponent,
+    MaskinglistComponent,
+    DataComponent,
+    DatalistComponent
+=======
+   // PageNotFoundComponent,
+//>>>>>>> c7b7e8ad1a09279b6180d5b4b63480a9e3b766fb
+>>>>>>> 101199da5de1e7d95b8d2d5b0890904272c5119a
   
  
 
