@@ -160,7 +160,7 @@ export function myHttpLoader(http: HttpClient) {
     PaymentlistComponent,
     CredentialComponent,
     CredentiallistComponent,
-<<<<<<< HEAD
+
     MaskingComponent,
     MaskinglistComponent,
     DataComponent,
