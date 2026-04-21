@@ -77,6 +77,10 @@ import { PaymentComponent } from './payment/payment.component';
 import { PaymentlistComponent } from './payment/paymentlist.component';
 import { CredentialComponent } from './credential/credential.component';
 import { CredentiallistComponent } from './credential/credentiallist.component';
+import { MaskingComponent } from './masking/masking.component';
+import { MaskinglistComponent } from './masking/maskinglist.component';
+import { DataComponent } from './data/data.component';
+import { DatalistComponent } from './data/datalist.component';
 
 
 
@@ -156,6 +160,10 @@ export function myHttpLoader(http: HttpClient) {
     PaymentlistComponent,
     CredentialComponent,
     CredentiallistComponent,
+    MaskingComponent,
+    MaskinglistComponent,
+    DataComponent,
+    DatalistComponent,
   
  
 

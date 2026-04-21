@@ -59,6 +59,10 @@ import { PaymentComponent } from './payment/payment.component';
 import { PaymentlistComponent } from './payment/paymentlist.component';
 import { CredentialComponent } from './credential/credential.component';
 import { CredentiallistComponent } from './credential/credentiallist.component';
+import { MaskingComponent } from './masking/masking.component';
+import { MaskinglistComponent } from './masking/maskinglist.component';
+import { DataComponent } from './data/data.component';
+import { DatalistComponent } from './data/datalist.component';
 
 
 const routes: Routes = [
@@ -427,6 +431,36 @@ const routes: Routes = [
         component: CredentialComponent
     },
 
+
+
+     {
+        path: 'masking',
+        component: MaskingComponent
+    },
+ {
+        path: 'maskinglist',
+        component: MaskinglistComponent
+    },
+ {
+        path: 'masking/:id',
+        component: MaskingComponent
+    },
+
+
+
+
+     {
+        path: 'data',
+        component: DataComponent
+    },
+ {
+        path: 'datalist',
+        component: DatalistComponent
+    },
+ {
+        path: 'data/:id',
+        component: DataComponent
+    },
 
 
 
